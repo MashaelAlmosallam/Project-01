@@ -1,0 +1,6 @@
+<h1>Arts#edit</h1>
+<p>Find me in app/views/arts/edit.html.erb</p>
+<% if current_user && current_user.admin%>
+<%= link_to 'Edit', edit_art_path(art) %>
+<%= link_to 'Destroy', art, method: delete %>
+<% end%>

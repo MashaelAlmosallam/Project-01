@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project01</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<nav>
+<% if user_signed_in? %>
+ <p>Stuff for logged in users</p>
+<% else %>
+ <p>Stuff for logged out users</p>
+<% end %>
+</nav>
+<nav>
+
+   <% if current_user  %>
+ <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+   <% else %>
+<%= link_to 'Log In', new_user_session_path %>
+
+<%= link_to "Sign Up", new_user_registration_path %>
+<% end%>
+<% if user_signed_in? && current_user.admin%>
+<%= current_user.name%>
+<% end %>
+ </nav>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+    <%= yield %>
+  </body>
+</html>
