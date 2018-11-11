@@ -16,10 +16,3 @@
 //= require turbolinks
 //= require materialize
 //= require_tree .
-
-$(document).on('turbolinks:load', function () {
-    console.log('jquery connected');
-    $('h3').on("click", function () {
-        console.log("Click!");
-    })
-})
