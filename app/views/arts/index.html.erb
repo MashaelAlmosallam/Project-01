@@ -1,5 +1,7 @@
 <h2>All Arts List</h2>
-
+<% @tags.each do |tag| %>
+<span class="left-pad"> <%= link_to tag.name, tag_path(tag)%> </span>
+<% end %>
 <div class="arts row">
 <% @arts.each do |art| %>
 <div class="col s3">
@@ -12,7 +14,7 @@
      <span class="card-title activator grey-text text-darken-4">
     <h6>Art Name: <%= art.name %></h6>
     <h6> Art Description: <%=art.description.truncate(30) %></h6>
-    <h6>Art Price: <%= art.price %></h6>
+    <h6>Art Price: <%= number_to_currency art.price %></h6>
  
      </span>
    </div>

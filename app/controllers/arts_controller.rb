@@ -3,6 +3,7 @@ class ArtsController < ApplicationController
 
   def index
     @arts = Art.all
+    @tags = Tag.all
   end
 
   def show

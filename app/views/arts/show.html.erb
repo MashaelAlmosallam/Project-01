@@ -1,5 +1,6 @@
 show page
 <h2><%= @art.name %></h2>
+ <img class="size", class="activator" src="<%= @art.image %>">
 <p><%= @art.description %></p></br>
 <p><%= @art.price %></p>
 <p><%= link_to("Edit Art", edit_art_path(@art)) %></p>

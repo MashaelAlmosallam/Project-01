@@ -2,7 +2,6 @@
 <nav class="blue-grey">
   
 
-<%= link_to "All tags",tags_path %>
 <%= link_to "See All picture", arts_path %>
 <% if user_signed_in? && current_user.admin%>
 <%= link_to("Add new Art",new_art_path) %>

@@ -64,3 +64,7 @@ nav a:hover, nav span:hover{
     pointer-events: inherit;
     width: auto;
 } 
+
+.left-pad {
+    padding-left: 20px;
+}
