@@ -4,6 +4,30 @@
 
 <% @user.arts.each do |a| %>
   <p>
-    <%= link_to p.name, art_path(a) %>
+    <%= link_to a.name, art_path(a) %>
   </p>
 <% end %>
+
+
+<h2><%= @user.username %></h2>
+
+<h3>All Art</h3>
+
+<% @user.arts.each do |a| %>
+  <p>
+    <%= link_to a.name, art_path(a) %>
+  </p>
+   <p>
+    <%= link_to a.image, art_path(a) %>
+  </p>
+  <p>
+    <%= link_to a.description, art_path(a) %>
+  </p>
+    <p>
+    <%= link_to a.price, art_path(a) %>
+  </p>
+
+<% end %>
+<h2>hhhhhhh</h2>
+<%= cl_image_tag current_user.image %>
+<%#= cl_image_tag @user.image %>

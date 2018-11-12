@@ -1,12 +1,12 @@
 class ArtsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  #before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def index
-    @arts = Arts.all
+    @arts = Art.all
   end
 
   def show
-    @art = Arts.find_by(id: params[:id])
+    @art = Art.find_by(id: params[:id])
   end
 
   def new
@@ -37,6 +37,6 @@ class ArtsController < ApplicationController
   private
 
   def art_params
-    params.require(:art).permit(:name, :description, :price, :image)
+    params.require(:art).permit(:name, :description, :price, :image, tag_ids: [])
   end
 end

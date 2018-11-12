@@ -1,2 +1,7 @@
-<h1>Arts#new</h1>
-<p>Find me in app/views/arts/new.html.erb</p>
+<h1>Add art</h1>
+
+<% if current_user && current_user.admin%>
+ <%= render partial: "form" %> 
+<%= link_to 'new', new_art_path(@art) %>
+
+<% end%>

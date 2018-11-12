@@ -11,28 +11,36 @@
   </head>
 
   <body>
-<nav>
-<% if user_signed_in? %>
- <p>Stuff for logged in users</p>
-<% else %>
- <p>Stuff for logged out users</p>
-<% end %>
-</nav>
-<nav>
+      <%= render partial: "pages/nav" %>
 
-   <% if current_user  %>
- <%= link_to "Log out", destroy_user_session_path, method: :delete %>
-   <% else %>
-<%= link_to 'Log In', new_user_session_path %>
-
-<%= link_to "Sign Up", new_user_registration_path %>
-<% end%>
-<% if user_signed_in? && current_user.admin%>
-<%= current_user.name%>
-<% end %>
- </nav>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
     <%= yield %>
+
   </body>
+<footer class="teal lighten-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s9">
+                <h5 class="white-text">About Us</h5>
+                <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorem omnis deleniti illum, velit provident autem veritatis obcaecati veniam? A, quam officia ut dolor dignissimos ipsam quibusdam repellendus architecto impedit?</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>     
 </html>

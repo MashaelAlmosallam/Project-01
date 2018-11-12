@@ -1,0 +1,27 @@
+<% if current_user && current_user.admin%>
+<%= form_for @art do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+  <div>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+<div>
+<%= f.label :tag_ids, "Choose  tag" %>
+</br>
+<%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name%>
+
+  </div>
+  <%= f.submit "Add a photo" %>
+<% end %>
+<% end%>

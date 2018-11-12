@@ -1,2 +1,6 @@
-<h1>Tags#show</h1>
-<p>Find me in app/views/tags/show.html.erb</p>
+<h2><%= @tag.name %></h2>
+
+<% @tag.arts.each do |tag| %>
+<p><%= link_to tag.name, art_path(tag) %></p>
+<% end%>
+<p> <img src="<%#= @tag.arts.image %>" width =500></p>

@@ -16,10 +16,10 @@
 
  body{
     margin: 80px 0;
-    font-family:  monospace;
+
 }
 nav{
-    background: #16161d;
+    background: #040405;
     color: #f8f8ff;
     height: 80px;
     line-height: 80px;
@@ -30,23 +30,37 @@ nav{
     left: 0;
     width: 100%;
     box-shadow: 0 0px 5px  #16161d;
+    z-index: 5;
 }
 nav a, nav span {
     color: #f8f8ff;
-    background: lightblue;
+    background: #26a69a;
     transition: all 0.3s;
     flex-grow: 1;
-    text-decoration-color: dodgerblue;
-
 }
 nav a:hover, nav span:hover{
     background: #f8f8ff;
     color: #16161d;
-    text-decoration-color: hotpink;
-
-
 }
 .log{
        height: 80px;
     line-height: 80px;
 }
+.size{
+    width: 200px;
+    height: 250px;
+}
+
+.footer, html, body {
+    margin-bottom: 0
+}
+
+.allpage {
+    height: 100vh;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative;
+    opacity: 1;
+    pointer-events: inherit;
+    width: auto;
+} 
