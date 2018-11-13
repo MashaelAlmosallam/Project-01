@@ -1,14 +1,24 @@
 <h2><%= @tag.name %></h2>
-<h2>All Arts List</h2>
+
 <% @tags.each do |tag| %>
 <span> <%= link_to tag.name, tag_path(tag)%> </span>
 <% end %>
-
+ <div class="arts row">
+<% @tag.arts.each do |tag| %>
+<div class="col s3">
+<div class="card medium">
+   <div class="card-image waves-effect waves-block waves-light">
+    <a href="<%=art_path(tag)%>"> <img class="size", class="activator" src="<%= tag.image %>"></a>
+   </div>
    <div class="card-content">
      <span class="card-title activator grey-text text-darken-4">
     <h6>Art Name: <%= tag.name %></h6>
-    <h6> Art Description: <%=tag.description.truncate(30) %></h6>
-    <h6>Art Price: <%= number_to_currency tag.price %></h6>
-   <img class="size", class="activator" src="<%= tag.image %>">
-     </span>
-   </div>
+     <h6> Art Description: <%=tag.description.truncate(30) %></h6>
+     <h6>Art Price: <%= number_to_currency tag.price %></h6>
+  
+      </span>
+    </div>
+  </div>
+ </div>
+ <% end %>
+ </div>
