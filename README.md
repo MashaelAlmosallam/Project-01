@@ -1,24 +1,26 @@
-# README
+# Project-01: E-Commerce Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+           ### **PROJECT UNDER DEVELOPMENT**
+## Explanation of the technologies:
+* Ruby on Rails
+* Materialize
+* CSS 
+## Approach Taken:
+* Create a Models
+* Added Relationships
+* Controllers & Views
+## Unsolved Problems
+* JQuery
+## Link: 
+* [E-Commerece Website](https://afternoon-cove-36891.herokuapp.com/)
+## What's next:
+* Add Models
+    *  Shoping Cart
+    *  Orders
+* Style 
+## Credits:
+* [Jack Jeffress ](https://github.com/ga-wolf)
+* [Moath Althawad](https://github.com/mfalthaw/)
+* [Deanin] (https://github.com/deanout)
+* [Stack OverFlow](https://stackoverflow.com/)
+* [Materialize](https://materializecss.com/)
