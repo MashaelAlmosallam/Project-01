@@ -2,15 +2,11 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
-<<<<<<< HEAD
 gem "devise"
 gem 'pry'
 gem 'cloudinary'
 gem 'rest-client', '~> 2.0'
 gem 'carrierwave'
-=======
-
->>>>>>> 775e15c3296e0da7b98b7c911688fe3c4f3eaa37
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use postgresql as the database for Active Record
