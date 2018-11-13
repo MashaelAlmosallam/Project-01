@@ -1,4 +1,4 @@
 class Order < ApplicationRecord
-    belongs_to :user
-    has_many :arts
+  belongs_to :user
+  has_many :arts
 end
