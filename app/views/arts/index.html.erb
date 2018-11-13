@@ -1,7 +1,9 @@
 <h2>All Arts List</h2>
+
 <% @tags.each do |tag| %>
-<span class="left-pad"> <%= link_to tag.name, tag_path(tag)%> </span>
+<span> <%= link_to tag.name, tag_path(tag)%> </span>
 <% end %>
+
 <div class="arts row">
 <% @arts.each do |art| %>
 <div class="col s3">
