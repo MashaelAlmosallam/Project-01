@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # README
+
+# README Modified
+>>>>>>> 775e15c3296e0da7b98b7c911688fe3c4f3eaa37
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

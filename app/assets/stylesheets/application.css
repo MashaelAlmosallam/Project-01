@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< HEAD
 
  body{
     margin: 80px 0;
@@ -68,3 +69,5 @@ nav a:hover, nav span:hover{
 .left-pad {
     padding-left: 20px;
 }
+=======
+>>>>>>> 775e15c3296e0da7b98b7c911688fe3c4f3eaa37
