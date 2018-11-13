@@ -21,6 +21,6 @@
 ## Credits:
 * [Jack Jeffress ](https://github.com/ga-wolf)
 * [Moath Althawad](https://github.com/mfalthaw/)
-* [Deanin] (https://github.com/deanout)
+* [Deanin](https://github.com/deanout)
 * [Stack OverFlow](https://stackoverflow.com/)
 * [Materialize](https://materializecss.com/)
