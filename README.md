@@ -1,6 +1,6 @@
 # Project-01: E-Commerce Website
 
-                                                ### **PROJECT UNDER DEVELOPMENT**
+### **PROJECT UNDER DEVELOPMENT** 
 ## Explanation of the technologies:
 * Ruby on Rails
 * Materialize
